@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证输入</title>
+</head>
+<body>
+<h1>验证输入</h1>
+<p>请输入数字。不是的话，提示</p>
+<input id="demo" type="text">
+<script>
+    function myFunction() {
+        var x=document.getElementById("demo").value;
+        if(x==""||isNaN(x)){
+            alert("不是数字")
+        }
+    }
+</script>
+<button type="button" onclick="myFunction()">试试</button>
+
+</body>
+</html>
