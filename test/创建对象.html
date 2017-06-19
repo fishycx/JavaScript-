@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*这个例子创建了对象的一个新实例，并向其添加了四个属性：
+     */
+//    person = new Object()
+//    person.firstName = "Bill";
+//    person.lastName = "Gates";
+//    person.age = 56;
+//    person.eyecolor="bule";
+
+/*literals 字面量*/
+//    person = {firstName:"fish", lastname:"gates", age:"56", eyecolor:"bulue"}
+    //    document.write(person.firstName+" is "+person.age + " years old.");
+
+    /*构造函数**/
+    function person(firstName,lastName, age, eyecolor) {
+        this.firstName = firstName;
+        this.lastName  = lastName;
+        this.age = age;
+        this.eyecolor = eyecolor;
+        this.changeName = changeName;
+        function changeName(name) {
+            this.lastName = name;
+        }
+    }
+//    myFather = new person("Bill", "Gates", 56, "blue");
+//    document.write(myFather.firstName + " is " + myFather.age + "years old");
+    myMother = new person("steve","Jobs",56,"green");
+    myMother.changeName("Ballmer")
+    document.write(myMother.lastName);
+</script>
+
+</body>
+</html>
